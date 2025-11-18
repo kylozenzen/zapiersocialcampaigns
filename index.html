@@ -1,376 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hire Ben Campbell | Zapier Social Breakthrough</title>
-  <!-- Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
-  <!-- Inter Font --><link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Phosphor Icons --><script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <style>
     body { font-family: 'Inter', sans-serif; }
     /* Simple transition for the accordion icon */
     [data-toggle="campaign"] i {
       transition: transform 0.2s ease-in-out;
     }
+    /* Hide scrollbar for mobile menu */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-900 antialiased">
-  <!-- Top Nav --><header class="sticky top-0 z-30 border-b border-gray-200 bg-white/90 backdrop-blur-md">
+  
+  <!-- Top Nav -->
+  <header class="sticky top-0 z-40 border-b border-gray-200 bg-white/90 backdrop-blur-lg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-      <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 rounded-lg bg-[#ff4a00] flex items-center justify-center text-white font-extrabold text-xl">Z</div>
-        <span class="font-semibold tracking-tight text-sm sm:text-base">Hire Ben Campbell</span>
+      <!-- Logo Area -->
+      <div class="flex items-center space-x-2 z-50 relative">
+        <div class="w-8 h-8 rounded-lg bg-[#ff4a00] flex items-center justify-center text-white font-extrabold text-xl shrink-0 shadow-sm">Z</div>
+        <span class="font-semibold tracking-tight text-sm sm:text-base truncate">Hire Ben Campbell</span>
       </div>
+
+      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
-        <a href="#challenge" class="hover:text-gray-900 transition-colors">Challenge</a>
-        <a href="#goals" class="hover:text-gray-900 transition-colors">Goals</a>
-        <a href="#campaigns" class="hover:text-gray-900 transition-colors">Campaigns</a>
-        <a href="#collabs" class="hover:text-gray-900 transition-colors">Big Swings</a>
+        <a href="#challenge" class="hover:text-gray-900 transition-colors hover:bg-gray-50 px-3 py-2 rounded-lg">Challenge</a>
+        <a href="#goals" class="hover:text-gray-900 transition-colors hover:bg-gray-50 px-3 py-2 rounded-lg">Goals</a>
+        <a href="#campaigns" class="hover:text-gray-900 transition-colors hover:bg-gray-50 px-3 py-2 rounded-lg">Campaigns</a>
+        <a href="#collabs" class="hover:text-gray-900 transition-colors hover:bg-gray-50 px-3 py-2 rounded-lg">Big Swings</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none p-2 -mr-2 z-50 relative">
+        <i class="ph ph-list text-2xl" id="menu-icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col pt-20 px-6 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
+      <nav class="flex flex-col space-y-6 text-lg font-semibold text-gray-800">
+        <a href="#challenge" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center">
+          Challenge <i class="ph ph-arrow-right text-gray-400"></i>
+        </a>
+        <a href="#goals" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center">
+          Goals <i class="ph ph-arrow-right text-gray-400"></i>
+        </a>
+        <a href="#campaigns" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center">
+          Campaigns <i class="ph ph-arrow-right text-gray-400"></i>
+        </a>
+        <a href="#collabs" class="mobile-link border-b border-gray-100 pb-4 flex justify-between items-center text-[#ff4a00]">
+          Big Swings <i class="ph ph-star text-[#ff4a00]"></i>
+        </a>
       </nav>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
-    <!-- Wrapper with warm background --><div class="bg-[#fff8f3] rounded-3xl border border-gray-200 shadow-sm mt-6 px-4 sm:px-6 md:px-8 py-10 space-y-10">
+    <!-- Wrapper with warm background -->
+    <div class="bg-[#fff8f3] rounded-3xl border border-gray-200 shadow-sm mt-4 sm:mt-6 px-4 sm:px-8 py-8 sm:py-10 space-y-10 sm:space-y-12">
     
-      <!-- Hero Section - Revised Text --><section class="pt-10 md:pt-12 pb-10 text-center border border-gray-200 rounded-2xl bg-white shadow-sm">
-        <p class="inline-flex items-center text-sm font-semibold uppercase tracking-wide text-[#ff4a00] bg-[#fff1e8] rounded-full px-3 py-1 mb-4">
-          <i class="ph-fill ph-megaphone text-[#ff4a00] mr-1.5"></i>
+      <!-- Hero Section -->
+      <section class="pt-6 sm:pt-10 pb-8 sm:pb-10 text-center border border-gray-200 rounded-2xl bg-white shadow-sm px-4">
+        <!-- Increased size of the pill by ~10% -->
+        <p class="inline-flex items-center text-[0.95rem] font-semibold uppercase tracking-wide text-[#ff4a00] bg-[#fff1e8] rounded-full px-4 py-1.5 mb-5">
+          <i class="ph-fill ph-megaphone text-[#ff4a00] mr-2"></i>
           Social Campaign Concepts
         </p>
-        <!-- Revised H1: Shorter, more collaborative --><h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+        
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
           Hi Kaveh. Let&apos;s build social that <span class="text-[#ff4a00]">breaks through the noise.</span>
         </h1>
-        <!-- Revised Subtext: More personal and professional --><p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-700 mb-3">
-          Thank you again for the great conversation. I was so energized by your vision for Zapier&apos;s social—specifically, the need to break through the &quot;sea of AI noise&quot; with content that truly connects.
-        </p>
-        <p class="max-w-3xl mx-auto text-sm sm:text-base text-gray-600">
-          As a follow-up, I&apos;ve put together three quick &quot;social-first&quot; campaign concepts I&apos;d be excited to test and build out, starting day one—plus a few "big swing" collaborations that could be fun.
-        </p>
-        <p class="max-w-3xl mx-auto text-xs text-gray-500 mt-4 italic">Page concept and all ideas by candidate Ben Campbell.</p>
+        
+        <div class="max-w-3xl mx-auto space-y-4">
+          <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+            Thank you again for the great conversation. I was so energized by your vision for Zapier&apos;s social—specifically, the need to break through the &quot;sea of AI noise&quot; with content that truly connects.
+          </p>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+            As a follow-up, I&apos;ve put together three quick &quot;social-first&quot; campaign concepts I&apos;d be excited to test and build out, starting day one—plus a few "big swing" collaborations that could be fun.
+          </p>
+        </div>
+        <p class="max-w-3xl mx-auto text-xs text-gray-400 mt-6 italic">Page concept and all ideas by candidate Ben Campbell.</p>
       </section>
 
-      <!-- Goals - NEW VISUAL TREATMENT --><section id="goals" class="bg-white border border-[#ff4a00]/20 rounded-3xl p-6 md:p-8">
+      <!-- Goals Section -->
+      <section id="goals" class="bg-white border border-[#ff4a00]/20 rounded-3xl p-6 md:p-8 shadow-[0_4px_20px_-10px_rgba(255,74,0,0.1)]">
         <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">Our Core Objectives</h2>
-        <div class="grid gap-8 md:grid-cols-3">
+        <div class="grid gap-6 md:gap-8 md:grid-cols-3">
           <!-- Goal 1 -->
-          <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-[#fff1e8] rounded-full flex items-center justify-center shrink-0">
-              <i class="ph-fill ph-trend-up text-3xl text-[#ff4a00]"></i>
+          <div class="flex items-start space-x-4 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#fff1e8] rounded-full flex items-center justify-center shrink-0">
+              <i class="ph-fill ph-trend-up text-2xl sm:text-3xl text-[#ff4a00]"></i>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase text-gray-500 mb-1">Social KPIs</p>
-              <p class="text-base font-semibold text-gray-800">Higher reach & engagement</p>
-              <p class="mt-1 text-sm text-gray-600">Thumb-stopping hooks, watchable formats, more saves & shares.</p>
+              <p class="text-xs font-bold uppercase text-gray-500 mb-1">Social KPIs</p>
+              <p class="text-sm sm:text-base font-semibold text-gray-800">Higher reach & engagement</p>
+              <p class="mt-1 text-xs sm:text-sm text-gray-600">Thumb-stopping hooks, watchable formats, more saves & shares.</p>
             </div>
           </div>
           <!-- Goal 2 -->
-          <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-[#fff1e8] rounded-full flex items-center justify-center shrink-0">
-              <i class="ph-fill ph-cursor-click text-3xl text-[#ff4a00]"></i>
+          <div class="flex items-start space-x-4 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#fff1e8] rounded-full flex items-center justify-center shrink-0">
+              <i class="ph-fill ph-cursor-click text-2xl sm:text-3xl text-[#ff4a00]"></i>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase text-gray-500 mb-1">Website Traffic</p>
-              <p class="text-base font-semibold text-gray-800">More curiosity-driven clicks</p>
-              <p class="mt-1 text-sm text-gray-600">Clear CTAs that move people from feed to product.</p>
+              <p class="text-xs font-bold uppercase text-gray-500 mb-1">Website Traffic</p>
+              <p class="text-sm sm:text-base font-semibold text-gray-800">More curiosity-driven clicks</p>
+              <p class="mt-1 text-xs sm:text-sm text-gray-600">Clear CTAs that move people from feed to product.</p>
             </div>
           </div>
           <!-- Goal 3 -->
-          <div class="flex items-start space-x-4">
-            <div class="w-12 h-12 bg-[#fff1e8] rounded-full flex items-center justify-center shrink-0">
-              <i class="ph-fill ph-fire text-3xl text-[#ff4a00]"></i>
+          <div class="flex items-start space-x-4 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#fff1e8] rounded-full flex items-center justify-center shrink-0">
+              <i class="ph-fill ph-fire text-2xl sm:text-3xl text-[#ff4a00]"></i>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase text-gray-500 mb-1">Sales Impact</p>
-              <p class="text-base font-semibold text-gray-800">Warmer, better-informed leads</p>
-              <p class="mt-1 text-sm text-gray-600">Prospects who already “get” Zapier before the first call.</p>
+              <p class="text-xs font-bold uppercase text-gray-500 mb-1">Sales Impact</p>
+              <p class="text-sm sm:text-base font-semibold text-gray-800">Warmer, better-informed leads</p>
+              <p class="mt-1 text-xs sm:text-sm text-gray-600">Prospects who already “get” Zapier before the first call.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Challenge - Cleaned up and adjusted typography --><section id="challenge" class="bg-[#fff4ec] border border-[#ff4a00]/30 rounded-3xl p-6">
-        <div class="rounded-3xl border border-gray-200 bg-white p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+      <!-- Challenge Section -->
+      <section id="challenge" class="bg-[#fff4ec] border border-[#ff4a00]/30 rounded-3xl p-5 sm:p-6">
+        <div class="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 flex flex-col md:flex-row gap-8 items-start">
           <div class="flex-1">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">The reality: AI has saturated feeds.</h2>
-            <p class="text-sm md:text-base text-gray-700 mb-2">
+            <h2 class="text-lg sm:text-2xl font-bold text-gray-900 mb-3">The reality: AI has saturated feeds.</h2>
+            <p class="text-sm sm:text-base text-gray-700 mb-3 leading-relaxed">
               Every brand is posting about AI. Feature dumps, hot takes, product demos—most of it blends together. &quot;We use AI&quot; isn&apos;t a differentiator anymore.
             </p>
-            <p class="text-sm md:text-base text-gray-700 font-medium">
-              These campaigns are built to make Zapier the <span class="text-[#ff4a00]">most memorable</span> AI-adjacent brand in the feed, not just another square talking about AI.
+            <p class="text-sm sm:text-base text-gray-800 font-medium border-l-4 border-[#ff4a00] pl-3">
+              These campaigns are built to make Zapier the <span class="text-[#ff4a00] font-bold">most memorable</span> AI-adjacent brand in the feed, not just another square talking about AI.
             </p>
           </div>
-          <div class="w-full md:w-64 bg-gray-50 border border-dashed border-gray-300 rounded-2xl p-4 text-sm text-gray-700">
-            <p class="font-semibold text-xs uppercase tracking-wide text-gray-500 mb-2">Design Principles</p>
-            <ul class="space-y-2">
-              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Scroll-stopping, explainable in 3 seconds.</li>
-              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Native to TikTok, Reels, X, and LinkedIn.</li>
-              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Easy to iterate into weekly series.</li>
-              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Clear path from curiosity → click → conversation.</li>
+          <div class="w-full md:w-64 bg-gray-50 border border-dashed border-gray-300 rounded-xl p-4 text-sm text-gray-700 shrink-0">
+            <p class="font-bold text-xs uppercase tracking-wide text-gray-500 mb-3">Design Principles</p>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Scroll-stopping, explainable in 3s.</li>
+              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Native to TikTok, Reels, X, LI.</li>
+              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Easy to iterate weekly.</li>
+              <li class="flex items-start"><i class="ph-fill ph-check-circle text-[#ff4a00] mt-0.5 mr-2 shrink-0"></i> Path from curiosity → click.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Campaign Overview Cards - Added icons and color --><section id="campaigns" class="bg-white border border-[#ff4a00]/20 rounded-3xl p-6">
+      <!-- Campaign Overview -->
+      <section id="campaigns" class="bg-white border border-[#ff4a00]/20 rounded-3xl p-5 sm:p-6">
         <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-5">Three complementary campaign directions</h2>
         <div class="grid gap-4 md:grid-cols-3">
-          <!-- Campaign 1 Card --><div class="rounded-2xl border border-gray-200 bg-blue-50 p-5 flex flex-col justify-between transition-all hover:border-blue-300 hover:shadow-sm">
+          <!-- Campaign 1 Card -->
+          <div class="rounded-2xl border border-gray-200 bg-gradient-to-b from-blue-50 to-white p-5 flex flex-col justify-between transition-all hover:border-blue-300 hover:shadow-md">
             <div>
               <div class="flex items-center space-x-2 mb-2">
-                <i class="ph-fill ph-flow-arrow text-blue-600 text-2xl"></i>
-                <p class="text-xs font-semibold uppercase tracking-wide text-blue-600">Campaign 1</p>
+                <div class="p-1.5 bg-blue-100 rounded-md"><i class="ph-fill ph-flow-arrow text-blue-600 text-lg"></i></div>
+                <p class="text-xs font-bold uppercase tracking-wide text-blue-600">Campaign 1</p>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-1">Connected in Ways You Can&apos;t Imagine</h3>
-              <p class="text-sm text-gray-700">Sleek, product-led content that makes Zapier feel like the calm, clear center of a noisy AI world.</p>
+              <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-1">Connected in Ways You Can&apos;t Imagine</h3>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2">Sleek, product-led content that makes Zapier feel like the calm center of a noisy AI world.</p>
             </div>
-            <p class="mt-3 text-xs text-blue-700 font-medium">Best for: LinkedIn, YouTube Shorts, high-intent audiences.</p>
+            <p class="mt-4 text-xs text-blue-700 font-medium bg-blue-50 inline-block px-2 py-1 rounded self-start">Best for: LinkedIn, YouTube Shorts</p>
           </div>
-          <!-- Campaign 2 Card --><div class="rounded-2xl border border-gray-200 bg-green-50 p-5 flex flex-col justify-between transition-all hover:border-green-300 hover:shadow-sm">
+          <!-- Campaign 2 Card -->
+          <div class="rounded-2xl border border-gray-200 bg-gradient-to-b from-green-50 to-white p-5 flex flex-col justify-between transition-all hover:border-green-300 hover:shadow-md">
             <div>
               <div class="flex items-center space-x-2 mb-2">
-                <i class="ph-fill ph-music-notes text-green-600 text-2xl"></i>
-                <p class="text-xs font-semibold uppercase tracking-wide text-green-600">Campaign 2</p>
+                <div class="p-1.5 bg-green-100 rounded-md"><i class="ph-fill ph-music-notes text-green-600 text-lg"></i></div>
+                <p class="text-xs font-bold uppercase tracking-wide text-green-600">Campaign 2</p>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-1">Stop Orchestrating Everything</h3>
-              <p class="text-sm text-gray-700">Unhinged comedy with a literal orchestra shadowing leaders—built to earn shares, stitches, and memes.</p>
+              <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-1">Stop Orchestrating Everything</h3>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2">Unhinged comedy with a literal orchestra shadowing leaders—built to earn shares & memes.</p>
             </div>
-            <p class="mt-3 text-xs text-green-700 font-medium">Best for: TikTok, Reels, X, creator collabs.</p>
+            <p class="mt-4 text-xs text-green-700 font-medium bg-green-50 inline-block px-2 py-1 rounded self-start">Best for: TikTok, Reels, X</p>
           </div>
-          <!-- Campaign 3 Card --><div class="rounded-2xl border border-gray-200 bg-purple-50 p-5 flex flex-col justify-between transition-all hover:border-purple-300 hover:shadow-sm">
+          <!-- Campaign 3 Card -->
+          <div class="rounded-2xl border border-gray-200 bg-gradient-to-b from-purple-50 to-white p-5 flex flex-col justify-between transition-all hover:border-purple-300 hover:shadow-md">
             <div>
               <div class="flex items-center space-x-2 mb-2">
-                <i class="ph-fill ph-wrench text-purple-600 text-2xl"></i>
-                <p class="text-xs font-semibold uppercase tracking-wide text-purple-600">Campaign 3</p>
+                <div class="p-1.5 bg-purple-100 rounded-md"><i class="ph-fill ph-wrench text-purple-600 text-lg"></i></div>
+                <p class="text-xs font-bold uppercase tracking-wide text-purple-600">Campaign 3</p>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-1">The One Essential Tool</h3>
-              <p class="text-sm text-gray-700">Quick metaphors that explain "AI without Zapier" as obviously broken—and make Zapier the missing piece.</p>
+              <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-1">The One Essential Tool</h3>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2">Visual metaphors that explain "AI without Zapier" as obviously broken—and Zapier as the fix.</p>
             </div>
-            <p class="mt-3 text-xs text-purple-700 font-medium">Best for: Cross-platform, evergreen snippets.</p>
+            <p class="mt-4 text-xs text-purple-700 font-medium bg-purple-50 inline-block px-2 py-1 rounded self-start">Best for: Cross-platform</p>
           </div>
         </div>
       </section>
 
-      <!-- Campaign Accordions - Added "Cross-Channel Impact" and color coordination --><section id="campaign-details" class="space-y-4 bg-[#fff4ec] border border-[#ff4a00]/30 rounded-3xl p-6">
+      <!-- Campaign Details (Accordions) -->
+      <section id="campaign-details" class="space-y-4 bg-[#fff4ec] border border-[#ff4a00]/30 rounded-3xl p-4 sm:p-6">
         
-        <!-- Campaign 1 Accordion --><div class="rounded-2xl border border-blue-200 bg-blue-50 p-5 shadow-sm">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="flex items-center space-x-2 mb-1">
-                <i class="ph-fill ph-flow-arrow text-blue-600 text-xl"></i>
-                <p class="text-xs font-semibold uppercase tracking-wide text-blue-600">Campaign 1</p>
+        <!-- Campaign 1 Accordion -->
+        <div class="rounded-2xl border border-blue-200 bg-white shadow-sm overflow-hidden">
+          <div class="p-4 sm:p-5">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-1">
+                  <i class="ph-fill ph-flow-arrow text-blue-600 text-lg"></i>
+                  <p class="text-xs font-bold uppercase tracking-wide text-blue-600">Campaign 1 Details</p>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-gray-900">Connected in Ways You Can&apos;t Imagine</h3>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-1">Connected in Ways You Can&apos;t Imagine</h3>
-              <p class="text-sm text-gray-700">
-                Product-forward, visually calm content that turns complex AI + automation stories into simple, satisfying moments.
-              </p>
+              <button
+                class="flex items-center justify-center w-10 h-10 text-blue-700 border border-blue-200 bg-blue-50 rounded-full hover:bg-blue-100 transition-colors shrink-0"
+                data-toggle="campaign" data-target="c1-details" aria-label="Toggle details">
+                <i class="ph ph-caret-down text-lg"></i>
+              </button>
             </div>
-            <button
-              class="flex items-center text-xs font-semibold text-blue-700 border border-blue-200 rounded-full px-3 py-1 hover:bg-blue-100 hover:border-blue-300 shrink-0 transition-colors"
-              data-toggle="campaign" data-target="c1-details">
-              <span class="mr-1">View more</span>
-              <i class="ph ph-caret-down text-sm"></i>
-            </button>
           </div>
-          <div id="c1-details" class="mt-4 pt-4 border-t border-blue-200 space-y-3 hidden text-sm text-gray-700">
-            <div class="rounded-xl border border-blue-100 bg-blue-50 p-3">
-              <p class="font-semibold mb-1">Short video: “POV: Everything Just Works”</p>
-              <p class="mb-1">Visual: chaotic desktop → apps snap into place, notifications resolve themselves, everything settles into a clean Zapier-style connection map.</p>
-              <p><span class="font-semibold text-gray-800">Caption:</span> <span class="italic text-gray-700">When the magic isn&apos;t magic—it&apos;s just Zapier doing its thing.</span></p>
+          
+          <div id="c1-details" class="hidden bg-blue-50/50 border-t border-blue-100 p-4 sm:p-5 text-sm text-gray-700 space-y-3">
+            <div class="bg-white p-3 rounded-lg border border-blue-100 shadow-sm">
+              <p class="font-semibold text-blue-900 mb-1">Short video: “POV: Everything Just Works”</p>
+              <p class="text-xs sm:text-sm mb-2">Visual: chaotic desktop → apps snap into place, notifications resolve, everything settles into a clean map.</p>
+              <p class="text-xs text-gray-500 font-mono bg-gray-50 p-1.5 rounded">Caption: When the magic isn't magic—it's just Zapier doing its thing.</p>
             </div>
-            <div class="rounded-xl border border-blue-100 bg-blue-50 p-3">
-              <p class="font-semibold mb-1">Carousel: “AI Alone vs AI + Zapier”</p>
-              <p class="mb-1">Slide 1: "AI alone" (visual clutter and tool overload). Slide 2: "AI + Zapier" (one clean layout showing data flowing through Zapier).</p>
-              <p><span class="font-semibold text-gray-800">Caption:</span> <span class="italic text-gray-700">AI can think. Zapier helps it actually get work done.</span></p>
-            </div>
-            <!-- NEW SECTION --><div class="mt-2 border-t border-dashed border-blue-200 pt-3">
-              <p class="font-semibold text-xs uppercase tracking-wide text-blue-600">Cross-Channel Impact</p>
-              <p class="mt-1 text-sm text-gray-700">This 'calm, connected' visual style can be used in <span class="font-medium text-blue-800">sales decks</span>, <span class="font-medium text-blue-800">website landing pages</span>, and <span class="font-medium text-blue-800">email nurture-flows</span> to create a unified brand experience.</p>
+            <!-- Cross-Channel Impact -->
+            <div class="mt-2 pt-2 border-t border-dashed border-blue-200">
+              <p class="font-bold text-xs uppercase tracking-wide text-blue-600 mb-1">Cross-Channel Impact</p>
+              <p class="text-xs sm:text-sm">Use this 'calm' style for <span class="font-semibold">sales decks</span> and <span class="font-semibold">landing pages</span> to unify the brand.</p>
             </div>
           </div>
         </div>
 
-        <!-- Campaign 2 Accordion --><div class="rounded-2xl border border-green-200 bg-green-50 p-5 shadow-sm">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="flex items-center space-x-2 mb-1">
-                <i class="ph-fill ph-music-notes text-green-600 text-xl"></i>
-                <p class="text-xs font-semibold uppercase tracking-wide text-green-600">Campaign 2</p>
+        <!-- Campaign 2 Accordion -->
+        <div class="rounded-2xl border border-green-200 bg-white shadow-sm overflow-hidden">
+          <div class="p-4 sm:p-5">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-1">
+                  <i class="ph-fill ph-music-notes text-green-600 text-lg"></i>
+                  <p class="text-xs font-bold uppercase tracking-wide text-green-600">Campaign 2 Details</p>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-gray-900">Stop Orchestrating Everything</h3>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-1">Stop Orchestrating Everything</h3>
-              <p class="text-sm text-gray-700">
-                A literal orchestra follows leaders around—turning the pain of manual coordination into a visual joke that&apos;s instantly shareable.
-              </p>
+              <button
+                class="flex items-center justify-center w-10 h-10 text-green-700 border border-green-200 bg-green-50 rounded-full hover:bg-green-100 transition-colors shrink-0"
+                data-toggle="campaign" data-target="c2-details" aria-label="Toggle details">
+                <i class="ph ph-caret-down text-lg"></i>
+              </button>
             </div>
-            <button
-              class="flex items-center text-xs font-semibold text-green-700 border border-green-200 rounded-full px-3 py-1 hover:bg-green-100 hover:border-green-300 shrink-0 transition-colors"
-              data-toggle="campaign" data-target="c2-details">
-              <span class="mr-1">View more</span>
-              <i class="ph ph-caret-down text-sm"></i>
-            </button>
           </div>
-          <div id="c2-details" class="mt-4 pt-4 border-t border-green-200 space-y-3 hidden text-sm text-gray-700">
-            <div class="rounded-xl border border-green-100 bg-green-50 p-3">
-              <p class="font-semibold mb-1">Short video: “Bathroom Brass Section”</p>
-              <p class="mb-1">Visual: a COO tries to take a quiet moment—brass section blares at full volume two feet away.</p>
-              <p><span class="font-semibold text-gray-800">Caption:</span> <span class="italic text-gray-700">Trying to manage everything manually? Enjoy conducting all of this. 🎺</span></p>
+          
+          <div id="c2-details" class="hidden bg-green-50/50 border-t border-green-100 p-4 sm:p-5 text-sm text-gray-700 space-y-3">
+            <div class="bg-white p-3 rounded-lg border border-green-100 shadow-sm">
+              <p class="font-semibold text-green-900 mb-1">Short video: “Bathroom Brass Section”</p>
+              <p class="text-xs sm:text-sm mb-2">Visual: COO tries to take a quiet moment—brass section blares 2 feet away.</p>
+              <p class="text-xs text-gray-500 font-mono bg-gray-50 p-1.5 rounded">Caption: Trying to manage everything manually? Enjoy conducting all of this. 🎺</p>
             </div>
-            <div class="rounded-xl border border-green-100 bg-green-50 p-3">
-              <p class="font-semibold mb-1">Short video: “Every App Switch = New Drummer”</p>
-              <p class="mb-1">Each tool switch spawns another drummer behind the exec until it&apos;s pure chaos.</p>
-              <p><span class="font-semibold text-gray-800">Caption:</span> <span class="italic text-gray-700">Switching apps shouldn&apos;t summon percussion.</span></p>
-            </div>
-            <!-- NEW SECTION --><div class="mt-2 border-t border-dashed border-green-200 pt-3">
-              <p class="font-semibold text-xs uppercase tracking-wide text-green-600">Cross-Channel Impact</p>
-              <p class="mt-1 text-sm text-gray-700">This concept is built for <span class="font-medium text-green-800">creator collaborations</span> and <span class="font-medium text-green-800">PR</span>. It's a shareable story that can be pitched to business publications as a "state of work" commentary.</p>
+            <!-- Cross-Channel Impact -->
+            <div class="mt-2 pt-2 border-t border-dashed border-green-200">
+              <p class="font-bold text-xs uppercase tracking-wide text-green-600 mb-1">Cross-Channel Impact</p>
+              <p class="text-xs sm:text-sm">Perfect for <span class="font-semibold">creator collabs</span> and <span class="font-semibold">PR stories</span> about the "chaos of modern work."</p>
             </div>
           </div>
         </div>
 
-        <!-- Campaign 3 Accordion --><div class="rounded-2xl border border-purple-200 bg-purple-50 p-5 shadow-sm">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <div class="flex items-center space-x-2 mb-1">
-                <i class="ph-fill ph-wrench text-purple-600 text-xl"></i>
-                <p class="text-xs font-semibold uppercase tracking-wide text-purple-600">Campaign 3</p>
+        <!-- Campaign 3 Accordion -->
+        <div class="rounded-2xl border border-purple-200 bg-white shadow-sm overflow-hidden">
+          <div class="p-4 sm:p-5">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-1">
+                  <i class="ph-fill ph-wrench text-purple-600 text-lg"></i>
+                  <p class="text-xs font-bold uppercase tracking-wide text-purple-600">Campaign 3 Details</p>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-gray-900">The One Essential Tool</h3>
               </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-1">The One Essential Tool</h3>
-              <p class="text-sm text-gray-700">
-                Fast, visual metaphors that show how using AI without Zapier is like trying to do anything important without the one thing that makes it work.
-              </p>
+              <button
+                class="flex items-center justify-center w-10 h-10 text-purple-700 border border-purple-200 bg-purple-50 rounded-full hover:bg-purple-100 transition-colors shrink-0"
+                data-toggle="campaign" data-target="c3-details" aria-label="Toggle details">
+                <i class="ph ph-caret-down text-lg"></i>
+              </button>
             </div>
-            <button
-              class="flex items-center text-xs font-semibold text-purple-700 border border-purple-200 rounded-full px-3 py-1 hover:bg-purple-100 hover:border-purple-300 shrink-0 transition-colors"
-              data-toggle="campaign" data-target="c3-details">
-              <span class="mr-1">View more</span>
-              <i class="ph ph-caret-down text-sm"></i>
-            </button>
           </div>
-          <div id="c3-details" class="mt-4 pt-4 border-t border-purple-200 space-y-3 hidden text-sm text-gray-700">
-            <div class="rounded-xl border border-purple-100 bg-purple-50 p-3">
-              <p class="font-semibold mb-1">Short video: “Barefoot Marathon”</p>
-              <p class="mb-1">Visual: runner hobbling through a race with no shoes as spectators wince.</p>
-              <p><span class="font-semibold text-gray-800">Caption:</span> <span class="italic text-gray-700">Using AI without Zapier is like running a marathon without shoes. Technically possible. Miserable in practice. 🏃‍♂️</span></p>
+          
+          <div id="c3-details" class="hidden bg-purple-50/50 border-t border-purple-100 p-4 sm:p-5 text-sm text-gray-700 space-y-3">
+            <div class="bg-white p-3 rounded-lg border border-purple-100 shadow-sm">
+              <p class="font-semibold text-purple-900 mb-1">Short video: “Barefoot Marathon”</p>
+              <p class="text-xs sm:text-sm mb-2">Visual: runner hobbling through a race with no shoes.</p>
+              <p class="text-xs text-gray-500 font-mono bg-gray-50 p-1.5 rounded">Caption: Using AI without Zapier is like running a marathon without shoes. Technically possible. Miserable.</p>
             </div>
-            <div class="rounded-xl border border-purple-100 bg-purple-50 p-3">
-              <p class="font-semibold mb-1">Short video: “Cooking Without Heat”</p>
-              <p class="mb-1">Visual: someone aggressively flipping raw chicken in a completely cold pan.</p>
-              <p><span class="font-semibold text-gray-800">Caption:</span> <span class="italic text-gray-700">AI can think. Zapier helps it actually cook. 🔥</span></p>
-            </div>
-            <!-- NEW SECTION --><div class="mt-2 border-t border-dashed border-purple-200 pt-3">
-              <p class="font-semibold text-xs uppercase tracking-wide text-purple-600">Cross-Channel Impact</p>
-              <p class="mt-1 text-sm text-gray-700">These "metaphor" assets are perfect for <span class="font-medium text-purple-800">top-of-funnel paid ads</span>, <span class="font-medium text-purple-800">conference/event booth backdrops</span>, and as quick, memorable <span class="font-medium text-purple-800">blog post headers</span>.</p>
+            <!-- Cross-Channel Impact -->
+            <div class="mt-2 pt-2 border-t border-dashed border-purple-200">
+              <p class="font-bold text-xs uppercase tracking-wide text-purple-600 mb-1">Cross-Channel Impact</p>
+              <p class="text-xs sm:text-sm">Ideal assets for <span class="font-semibold">paid ads</span> and <span class="font-semibold">event booth backdrops</span>.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- NEW SECTION: BIG SWING COLLABS --><section id="collabs" class="bg-white border border-gray-200 rounded-3xl p-6 md:p-8">
-        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-2 text-center">Big Swing Collaborations</h2>
-        <p class="text-center text-sm text-gray-600 mb-6 max-w-2xl mx-auto">Beyond the day-to-day, here are three major collaboration concepts designed to create a massive brand moment.</p>
+      <!-- BIG SWING COLLABS -->
+      <section id="collabs" class="bg-white border border-gray-200 rounded-3xl p-5 sm:p-8 shadow-sm">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 text-center">Big Swing Collaborations</h2>
+        <p class="text-center text-sm text-gray-600 mb-8 max-w-2xl mx-auto px-2">Beyond the day-to-day, here are three major collaboration concepts designed to create a massive brand moment.</p>
         
         <div class="space-y-6">
           <!-- Collab 1: Netflix -->
-          <div class="rounded-2xl border border-red-200 bg-red-50 p-5 shadow-sm">
+          <div class="rounded-2xl border border-red-200 bg-gradient-to-br from-red-50 to-white p-5 shadow-sm">
             <div class="flex items-start justify-between gap-4">
               <div>
                 <div class="flex items-center space-x-2 mb-1">
                   <i class="ph-fill ph-popcorn text-red-600 text-xl"></i>
-                  <p class="text-xs font-semibold uppercase tracking-wide text-red-600">Big Swing 1: Netflix</p>
+                  <p class="text-xs font-bold uppercase tracking-wide text-red-600">Netflix</p>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-1">"Automate the Hype Machine"</h3>
-                <p class="text-sm text-gray-700">
-                  Partner with Netflix to show how their world-class creative and social teams use automation to manage massive show launches. This positions Zapier as the essential "ops" tool behind the "magic."
+                <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-1">"Automate the Hype Machine"</h3>
+                <p class="text-xs sm:text-sm text-gray-700">
+                  Show how world-class creative teams use automation to manage massive show launches. Positions Zapier as the essential "ops" behind the "magic."
                 </p>
               </div>
               <button
-                class="flex items-center text-xs font-semibold text-red-700 border border-red-200 rounded-full px-3 py-1 hover:bg-red-100 hover:border-red-300 shrink-0 transition-colors"
+                class="flex items-center justify-center w-10 h-10 text-red-700 border border-red-200 bg-white rounded-full hover:bg-red-50 transition-colors shrink-0"
                 data-toggle="campaign" data-target="c4-details">
-                <span class="mr-1">View more</span>
-                <i class="ph ph-caret-down text-sm"></i>
+                <i class="ph ph-caret-down text-lg"></i>
               </button>
             </div>
-            <div id="c4-details" class="mt-4 pt-4 border-t border-red-200 space-y-3 hidden text-sm text-gray-700">
-              <div class="rounded-xl border border-red-100 bg-red-50 p-3">
-                <p class="font-semibold mb-1">Hero Video: “How Netflix *Really* Works”</p>
-                <p class="mb-1">A "Day in the Life" of a (hypothetical) Netflix Social Manager during a *Stranger Things* launch. Show Zaps auto-routing DMs, finding the best fan UGC, and connecting their asset manager to their scheduler.</p>
-                <p><span class="font-semibold text-gray-800">Vibe:</span> <span class="italic text-gray-700">Fast, slick, and feels like an insider's secret.</span></p>
-              </div>
-              <div class="rounded-xl border border-red-100 bg-red-50 p-3">
-                <p class="font-semibold mb-1">TikTok Series: “Un-Sexy Zaps for Sexy Brands”</p>
-                <p class="mb-1">Hook: "Ever wonder how the *Emily in Paris* Instagram account stays so chic?"</p>
-                <p><span class="font-semibold text-gray-800">Punchline:</span> <span class="italic text-gray-700">"Probably a Zap that connects their 'Croissant Pic' Google Drive to their 'Post for Later' queue. 😉"</span></p>
+            <div id="c4-details" class="hidden mt-4 pt-4 border-t border-red-100 text-sm text-gray-700 space-y-3">
+              <div class="bg-white p-3 rounded-lg border border-red-100">
+                <p class="font-bold text-red-900">Hero Video: “How Netflix *Really* Works”</p>
+                <p class="text-xs mt-1">A "Day in the Life" of a Netflix Social Manager during a launch. Zaps auto-routing DMs and finding best UGC.</p>
               </div>
             </div>
           </div>
 
           <!-- Collab 2: Tom Brady -->
-          <div class="rounded-2xl border border-blue-200 bg-blue-50 p-5 shadow-sm">
+          <div class="rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50 to-white p-5 shadow-sm">
             <div class="flex items-start justify-between gap-4">
               <div>
                 <div class="flex items-center space-x-2 mb-1">
                   <i class="ph-fill ph-football text-blue-800 text-xl"></i>
-                  <p class="text-xs font-semibold uppercase tracking-wide text-blue-800">Big Swing 2: Tom Brady</p>
+                  <p class="text-xs font-bold uppercase tracking-wide text-blue-800">Tom Brady</p>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-1">"The GOAT's System"</h3>
-                <p class="text-sm text-gray-700">
-                  Tap into the (very real) interview joke. Brady's success wasn't just talent; it was a relentless focus on system and process. Position Zapier as the "TB12 Method for your business."
+                <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-1">"The GOAT's System"</h3>
+                <p class="text-xs sm:text-sm text-gray-700">
+                  Tap into the interview joke. Brady's success wasn't just talent; it was process. Position Zapier as the "TB12 Method for your business."
                 </p>
               </div>
               <button
-                class="flex items-center text-xs font-semibold text-blue-800 border border-blue-200 rounded-full px-3 py-1 hover:bg-blue-100 hover:border-blue-300 shrink-0 transition-colors"
+                class="flex items-center justify-center w-10 h-10 text-blue-800 border border-blue-200 bg-white rounded-full hover:bg-blue-50 transition-colors shrink-0"
                 data-toggle="campaign" data-target="c5-details">
-                <span class="mr-1">View more</span>
-                <i class="ph ph-caret-down text-sm"></i>
+                <i class="ph ph-caret-down text-lg"></i>
               </button>
             </div>
-            <div id="c5-details" class="mt-4 pt-4 border-t border-blue-200 space-y-3 hidden text-sm text-gray-700">
-              <div class="rounded-xl border border-blue-100 bg-blue-50 p-3">
-                <p class="font-semibold mb-1">Hero Video: “Tom Brady Hates Wasting Time”</p>
-                <p class="mb-1">VO: "You don't get to 7 rings by doing *everything*. You get there by doing the *right* things. The rest? You automate it... You're still copying and pasting? You're wasting reps."</p>
-                <p><span class="font-semibold text-gray-800">Tagline:</span> <span class="italic text-gray-700">Automate. Win. Repeat.</span></p>
-              </div>
-              <div class="rounded-xl border border-blue-100 bg-blue-50 p-3">
-                <p class="font-semibold mb-1">TikTok Series: “Win Back Your Reps”</p>
-                <p class="mb-1">Quick clips of Brady. Text: "Tom Brady wouldn't manually update a spreadsheet." "Tom Brady wouldn't copy-paste emails." "Tom Brady would use Zapier."</p>
-                <p><span class="font-semibold text-gray-800">Why it works:</span> <span class="italic text-gray-700">It uses his high-performance persona to make manual work feel like a liability.</span></p>
+            <div id="c5-details" class="hidden mt-4 pt-4 border-t border-blue-100 text-sm text-gray-700 space-y-3">
+              <div class="bg-white p-3 rounded-lg border border-blue-100">
+                <p class="font-bold text-blue-900">Hero Video: “Tom Brady Hates Wasting Time”</p>
+                <p class="text-xs mt-1">VO: "You don't get to 7 rings by doing *everything*. You get there by doing the *right* things. Automate the rest."</p>
               </div>
             </div>
           </div>
           
-          <!-- Collab 3: HubSpot (REPLACES OpenAI) -->
-          <div class="rounded-2xl border border-orange-200 bg-orange-50 p-5 shadow-sm">
+          <!-- Collab 3: HubSpot -->
+          <div class="rounded-2xl border border-orange-200 bg-gradient-to-br from-orange-50 to-white p-5 shadow-sm">
             <div class="flex items-start justify-between gap-4">
               <div>
                 <div class="flex items-center space-x-2 mb-1">
                   <i class="ph-fill ph-user-list text-orange-600 text-xl"></i>
-                  <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Big Swing 3: HubSpot</p>
+                  <p class="text-xs font-bold uppercase tracking-wide text-orange-600">HubSpot</p>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-1">"The Self-Building Customer Profile"</h3>
-                <p class="text-sm text-gray-700">
-                  Co-brand with HubSpot to show how Zapier is the *only* way to get a true 360-degree customer view, directly addressing the "warmer leads" goal.
+                <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-1">"The Self-Building Profile"</h3>
+                <p class="text-xs sm:text-sm text-gray-700">
+                  Co-brand with HubSpot to show how Zapier is the *only* way to get a true 360-degree customer view, directly addressing "warmer leads."
                 </p>
               </div>
               <button
-                class="flex items-center text-xs font-semibold text-orange-700 border border-orange-200 rounded-full px-3 py-1 hover:bg-orange-100 hover:border-orange-300 shrink-0 transition-colors"
+                class="flex items-center justify-center w-10 h-10 text-orange-700 border border-orange-200 bg-white rounded-full hover:bg-orange-50 transition-colors shrink-0"
                 data-toggle="campaign" data-target="c6-details">
-                <span class="mr-1">View more</span>
-                <i class="ph ph-caret-down text-sm"></i>
+                <i class="ph ph-caret-down text-lg"></i>
               </button>
             </div>
-            <div id="c6-details" class="mt-4 pt-4 border-t border-orange-200 space-y-3 hidden text-sm text-gray-700">
-              <div class="rounded-xl border border-orange-100 bg-orange-50 p-3">
-                <p class="font-semibold mb-1">LinkedIn Video: “The 10-Second Sales Team”</p>
-                <p class="mb-1">Show a new HubSpot lead record. Zaps fly in: "New Webflow form," "Booked Calendly demo," "No Stripe history." A sales rep sees a full story, not just a name.</p>
-                <p><span class="font-semibold text-gray-800">Tagline:</span> <span class="italic text-gray-700">Your reps should be closing, not researching. Let Zapier build the profile.</span></p>
-              </div>
-              <div class="rounded-xl border border-orange-100 bg-orange-50 p-3">
-                <p class="font-semibold mb-1">TikTok/Reels: “My HubSpot is Smarter Than Yours”</p>
-                <p class="mb-1">Hook: "Stop asking your customers the same questions." Shows a Zap: "New Typeform response" → "Update custom property in HubSpot."</p>
-                <p><span class="font-semibold text-gray-800">Punchline:</span> <span class="italic text-gray-700">"Now your sales team knows their favorite movie *before* the first call. You're welcome."</span></p>
+            <div id="c6-details" class="hidden mt-4 pt-4 border-t border-orange-100 text-sm text-gray-700 space-y-3">
+              <div class="bg-white p-3 rounded-lg border border-orange-100">
+                <p class="font-bold text-orange-900">LinkedIn Video: “The 10-Second Sales Team”</p>
+                <p class="text-xs mt-1">Show a HubSpot lead record auto-populating with data from everywhere. Sales reps close, they don't data-entry.</p>
               </div>
             </div>
           </div>
@@ -381,17 +402,51 @@
     </div>
   </main>
 
-  <!-- NEW FOOTER SECTION --><footer class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-gray-500">
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-gray-500 border-t border-gray-200/50 mt-8">
     <p class="text-sm">
-      Like what you see? <a href="https://hirebencampbell.netlify.app" target="_blank" rel="noopener noreferrer" class="font-medium text-[#ff4a00] hover:text-[#ff4a00]/80 transition-colors">View my full portfolio</a>.
+      Like what you see? <a href="https://hirebencampbell.netlify.app" target="_blank" rel="noopener noreferrer" class="font-medium text-[#ff4a00] hover:text-[#ff4a00]/80 transition-colors border-b border-[#ff4a00]/30 hover:border-[#ff4a00]">View my full portfolio</a>.
     </p>
-    <p class="text-xs mt-2">
+    <p class="text-xs mt-3 text-gray-400">
       &copy; 2025 Ben Campbell. This is a conceptual follow-up and is not affiliated with Zapier.
     </p>
   </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+      let isMenuOpen = false;
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          isMenuOpen = !isMenuOpen;
+          if (isMenuOpen) {
+            mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+            menuIcon.classList.replace('ph-list', 'ph-x');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+          } else {
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            menuIcon.classList.replace('ph-x', 'ph-list');
+            document.body.style.overflow = '';
+          }
+        });
+
+        // Close menu when clicking a link
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            isMenuOpen = false;
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            menuIcon.classList.replace('ph-x', 'ph-list');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Accordion Toggle Logic
       const buttons = document.querySelectorAll('[data-toggle="campaign"]');
       
       buttons.forEach((btn) => {
@@ -399,11 +454,6 @@
           const targetId = btn.getAttribute('data-target');
           const panel = document.getElementById(targetId);
           const icon = btn.querySelector('i');
-          const isOpen = !panel.classList.contains('hidden');
-
-          // --- Simple Accordion Logic ---
-          // This version just toggles the clicked one. 
-          // To close others, we'd add more logic, but this is clean.
           
           // Toggle current panel
           panel.classList.toggle('hidden');
@@ -411,37 +461,17 @@
           // Toggle icon rotation
           if (panel.classList.contains('hidden')) {
             icon.style.transform = 'rotate(0deg)';
+            btn.style.backgroundColor = ''; // Reset bg
           } else {
             icon.style.transform = 'rotate(180deg)';
+            // Optional: darken button slightly when open
+            // btn.style.backgroundColor = '#f3f4f6'; 
           }
-
-          // --- Advanced: Close all others ---
-          // Uncomment this block for "only one open at a time" behavior
-          /*
-          buttons.forEach(otherBtn => {
-            const otherTargetId = otherBtn.getAttribute('data-target');
-            const otherPanel = document.getElementById(otherTargetId);
-            const otherIcon = otherBtn.querySelector('i');
-
-            if (otherTargetId !== targetId) {
-              // Close other panels
-              otherPanel.classList.add('hidden');
-              otherIcon.style.transform = 'rotate(0deg)';
-            } else {
-              // Toggle the clicked panel
-              otherPanel.classList.toggle('hidden');
-              // Toggle icon rotation
-              if (otherPanel.classList.contains('hidden')) {
-                otherIcon.style.transform = 'rotate(0deg)';
-              } else {
-                otherIcon.style.transform = 'rotate(180deg)';
-              }
-            }
-          });
-          */
         });
       });
     });
   </script>
 </body>
 </html>
+
+
