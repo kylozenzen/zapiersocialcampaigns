@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth scroll-pt-24">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hire Ben Campbell | Zapier Social Breakthrough</title>
+  
+  <!-- Open Graph Tags for Social Sharing (Slack, LinkedIn, iMessage) -->
+  <meta property="og:title" content="Hire Ben Campbell | Zapier Social Breakthrough" />
+  <meta property="og:description" content="3 social-first campaign concepts and big swing collaborations ready to test on day one." />
+  <meta property="og:type" content="website" />
+  <!-- Optional: Add an image URL here if you have a hosting link for a preview image -->
+  <!-- <meta property="og:image" content="https://your-image-url.com/preview.jpg" /> -->
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Inter Font -->
@@ -25,6 +33,15 @@
     .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
+    }
+    /* Subtle fade-in animation for hero */
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -72,12 +89,12 @@
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-10">
     <!-- Wrapper with warm background -->
     <div class="bg-[#fff8f3] rounded-3xl border border-gray-200 shadow-sm mt-4 sm:mt-6 px-4 sm:px-8 py-8 sm:py-10 space-y-10 sm:space-y-12">
     
       <!-- Hero Section -->
-      <section class="pt-6 sm:pt-10 pb-8 sm:pb-10 text-center border border-gray-200 rounded-2xl bg-white shadow-sm px-4">
+      <section class="pt-6 sm:pt-10 pb-8 sm:pb-10 text-center border border-gray-200 rounded-2xl bg-white shadow-sm px-4 animate-fade-in">
         <!-- Increased size of the pill by ~10% -->
         <p class="inline-flex items-center text-[0.95rem] font-semibold uppercase tracking-wide text-[#ff4a00] bg-[#fff1e8] rounded-full px-4 py-1.5 mb-5">
           <i class="ph-fill ph-megaphone text-[#ff4a00] mr-2"></i>
@@ -432,14 +449,20 @@
         </div>
       </section>
 
+      <!-- Closing CTA Section (NEW) -->
+      <section class="text-center py-8">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Ready to make this happen?</h2>
+        <p class="text-gray-600 text-sm mb-6">I'm excited to hit the ground running.</p>
+        <a href="https://hirebencampbell.netlify.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#ff4a00] hover:bg-[#e04100] text-white font-semibold py-3 px-6 rounded-full transition-all shadow-md hover:shadow-lg">
+          View My Full Portfolio <i class="ph-fill ph-arrow-right ml-2"></i>
+        </a>
+      </section>
+
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-gray-500 border-t border-gray-200/50 mt-8">
-    <p class="text-sm">
-      Like what you see? <a href="https://hirebencampbell.netlify.app" target="_blank" rel="noopener noreferrer" class="font-medium text-[#ff4a00] hover:text-[#ff4a00]/80 transition-colors border-b border-[#ff4a00]/30 hover:border-[#ff4a00]">View my full portfolio</a>.
-    </p>
     <p class="text-xs mt-3 text-gray-400">
       &copy; 2025 Ben Campbell. This is a conceptual follow-up and is not affiliated with Zapier.
     </p>
